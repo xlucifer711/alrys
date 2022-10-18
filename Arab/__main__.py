@@ -9,9 +9,9 @@ from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmess
 LOGS = logging.getLogger("تليثون العرب")
 cmdhr = Config.COMMAND_HAND_LER
 try:
-    LOGS.info("بدء تنزيل تليثون العرب")
+    LOGS.info("بدء تنزيل سيدا ثون")
     iqthon.loop.run_until_complete(setup_bot())
-    LOGS.info("بدء تشغيل البوت")
+    LOGS.info("بدء تشغيل سيدا ثون")
 except Exception as e:
     LOGS.error(f"{str(e)}")
     sys.exit()
@@ -23,7 +23,7 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print(f"<b> ⌔︙ اهلا بك لقد نصبت تليثون العرب (7.7) بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/iqthon ")
+    print(f"<b> ⌔︙ اهلا بك لقد نصبت سيدا ثون (7.7) بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/UUUO1944 ")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
@@ -34,7 +34,7 @@ async def startup_process():
 iqthon.loop.run_until_complete(startup_process())
 def start_bot():
   try:
-      List = ["iqthon","uruur","gyygg","V6BAQ"]
+      List = ["iqthon","UUUO1944"]
       for id in List :
           iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest(id)))
   except Exception as e:
