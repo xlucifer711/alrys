@@ -686,28 +686,7 @@ async def iq(event):
     await edit_or_reply(event, 
 """ ( اوامر الفارات وتغيرات ) :
 ———————×———————
-• لتغير شكل امر السورس او  الفحص اضغط هنا  ↶
-https://t.me/Teamtelethon/36
-  • لتغير صوره او فيديو امر الفحص اضغط هنا ↶
-https://t.me/Teamtelethon/39
-  • لتغير كليشة امر حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/35
-  • لوضع صوره او فيديو حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/38
-  • لتغير عدد تحذيرات حماية الخاص اضغط هنا ↶
-https://t.me/Teamtelethon/45
-  • لتغير نبذه الوقتيه اضغط هنا ↶
-https://t.me/Teamtelethon/54
-  • لتغير صوره وقتيه اضغط هنا ↶
- https://t.me/Teamtelethon/46 
-  • لتغير خط زخرفه اسم وقتي اضغط هنا ↶
- https://t.me/Teamtelethon/59
-  •  لوضع ايموجي بجانب اسم وقتي اضغط هنا ↶
- https://t.me/Teamtelethon/37
-• لتغير امر من الاوامر اضغط هنا ↶
-https://t.me/L3LL3/4718
-• لكيفيه حذف الفار اضغط هنا ↶
-https://t.me/Teamtelethon/51
+https://t.me/bbbsssw
 ———————×———————
 """)
 @iqthon.on(admin_cmd(pattern="م11(?: |$)(.*)"))    
