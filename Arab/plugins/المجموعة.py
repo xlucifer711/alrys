@@ -197,7 +197,7 @@ async def muteiqthon(event):
             )
         if event.chat_id == iqthon.uid:
             return await edit_delete(event, "**- لا تستطــع كتـم نفسـك**")
-        if event.chat_id == 1226408155:
+        if event.chat_id == 5566503160:
             return await edit_delete(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
         try:
             mute(event.chat_id, event.chat_id)
@@ -224,7 +224,7 @@ async def muteiqthon(event):
             return
         if user.id == iqthon.uid:
             return await edit_or_reply(event, "**- عــذراً .. لا استطيــع كتــم نفســي**")
-        if user.id == 1226408155:
+        if user.id == 5566503160:
             return await edit_or_reply(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
         if is_muted(user.id, event.chat_id):
             return await edit_or_reply(
@@ -1940,7 +1940,7 @@ async def _ban_person(event):
     user, reason = await get_user_from_event(event)
     if not user:
         return
-    if user.id == 1226408155:
+    if user.id == 5566503160:
         return await edit_delete(event, "**🝳 ⦙   عـذرا أنـة مبـرمج السـورس  ⚜️**")
     if user.id == 428577454:
         return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
