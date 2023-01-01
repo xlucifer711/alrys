@@ -13,12 +13,11 @@ from ..core.managers import edit_or_reply, edit_delete
 from ..helpers import reply_id
 from ..sql_helper.globals import gvarstatus
 from . import spamwatch
-plugin_category = "@iqthon"
+plugin_category = "@pp_g3 "
 LOGS = logging.getLogger(__name__)
-iqthon_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "╮•• مـعلومات الـشخص من بوت سيدا ثون"
-iqthonM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "✦"
-iqthonF = gvarstatus("CUSTOM_ALIVE_FONT") or "★•┉ ┉ ┉ ┉ ┉ ┉  ┉ ┉ ┉ ┉•★"
-
+iqthon_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "╮•⎚ مـعلومات الـشخص من بوت الشيطان"
+iqthonM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "•❃"
+iqthonF = gvarstatus("CUSTOM_ALIVE_FONT") or "ٴ•━─━─━─━─━─━─━─━─━•
 
 
 async def get_user_from_event(event):
@@ -77,8 +76,8 @@ async def fetch_info(replied_user, event):
     full_name = full_name or first_name
     username = "@{}".format(username) if username else ("لايـوجـد معـرف")
     user_bio = "لاتـوجـد نبـذة" if not user_bio else user_bio
-    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" if user_id == 1226408155 else ("⌁ العضـو 𓅫 ⌁")
-    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id != 1226408155  else rotbat
+    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" user_id == 1400467850 or user_id == 1355571767 or user_id == 627658332 or user_id == 1050898456  else ("⌁ العضـو 𓅫 ⌁")
+    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id != 1050898456 and user_id != 627658332 and user_id != 1355571767 and user_id != 1400467850  else rotbat
     caption = f"<b> {iqthon_TEXT} </b>\n"
     caption += f"ٴ{iqthonF} \n"
     caption += f"<b> {iqthonM}╎الاسـم    ⇠ </b> {full_name}\n"
