@@ -17,7 +17,7 @@ plugin_category = "@pp_g3 "
 LOGS = logging.getLogger(__name__)
 iqthon_TEXT = gvarstatus("CUSTOM_ALIVE_TEXT") or "╮•⎚ مـعلومات الـشخص من بوت الشيطان"
 iqthonM = gvarstatus("CUSTOM_ALIVE_EMOJI") or "•❃"
-iqthonF = gvarstatus("CUSTOM_ALIVE_FONT") or "ٴ•━─━─━─━─━─━─━─━─━•
+iqthonF = gvarstatus("CUSTOM_ALIVE_FONT") or "•━─━─━─━─━─━─━─━─━•"
 
 
 async def get_user_from_event(event):
