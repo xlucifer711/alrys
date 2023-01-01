@@ -90,7 +90,7 @@ async def fetch_info(replied_user, event):
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
     caption += f"\n<b> {iqthonM}╎البايـو    ⇠ </b> {user_bio} \n"
     caption += f"<b> 𓆩 𝙎𝙊𝙐𝙍𝘾𝞝  𝐄𝐋 𝐒𝐇𝐄𝐓𝐀𝐍 𓆪 </b> - @pp_g3 "
-     caption += f"ٴ{iqthonF} "
+    caption += f"ٴ{iqthonF} "
     return photo, caption
 
 @iqthon.iq_cmd(pattern="ايدي(?: |$)(.*)",
