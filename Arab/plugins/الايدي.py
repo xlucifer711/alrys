@@ -85,7 +85,6 @@ async def fetch_info(replied_user, event):
         and user_id != 1050898456
         and user_id != 1400467850
         else rozrtba
-    caption = f"<b> {iqthon_TEXT} </b>\n"
     caption += f"ٴ{iqthonF} \n"
     caption += f"<b> {iqthonM}╎الاسـم    ⇠ </b> {full_name}\n"
     caption += f"<b> {iqthonM}╎المعـرف  ⇠ </b> {username}\n"
