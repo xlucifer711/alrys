@@ -76,8 +76,15 @@ async def fetch_info(replied_user, event):
     full_name = full_name or first_name
     username = "@{}".format(username) if username else ("لايـوجـد معـرف")
     user_bio = "لاتـوجـد نبـذة" if not user_bio else user_bio
-    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" user_id == 1400467850 or user_id == 1355571767 or user_id == 627658332 or user_id == 1050898456 else ("⌁ العضـو 𓅫 ⌁")
-    rotbat = "⌁ مـالك الحساب 𓀫 ⌁" if user_id == (await event.client.get_me()).id and user_id != 1050898456 and user_id != 627658332 and user_id != 1355571767 and user_id != 1400467850  else rotbat
+    rotbat = "⌁ من مطورين السورس 𓄂𓆃 ⌁" if user_id == 1355571767 or user_id == 1050898456 or user_id == 627658332  else ("⌁ العضـو 𓅫 ⌁")
+    rozrtba = (
+        ".「 مـالك الحساب  」."
+        if user_id == (await event.client.get_me()).id
+        and user_id != 627658332
+        and user_id != 1355571767
+        and user_id != 1050898456
+        and user_id != 1400467850
+        else rozrtba
     caption = f"<b> {iqthon_TEXT} </b>\n"
     caption += f"ٴ{iqthonF} \n"
     caption += f"<b> {iqthonM}╎الاسـم    ⇠ </b> {full_name}\n"
