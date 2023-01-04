@@ -54,6 +54,7 @@ ALIVE = gvarstatus("OR_ALIVE") or "(فحص|السورس)"
 UPDATE = gvarstatus("OR_UPDATE") or "(اعاده تشغيل|تحديث)"
 ORDERS = gvarstatus("OR_ORDERS") or "(الاوامر|ألاوامر|اوامري|أوامري|م)"
 IQTHONPC = gvarstatus("ALIVE_PIC") or "https://telegra.ph/file/de39b32c41b20f1bc0c68.jpg"
+IQTHON_IC = "https://telegra.ph/file/fb4d968101aabff5a8b59.jpg"
 LOGS = logging.getLogger(os.path.basename(__name__))
 LOGS1 = logging.getLogger(__name__)
 ppath = os.path.join(os.getcwd(), "temp", "githubuser.jpg")
