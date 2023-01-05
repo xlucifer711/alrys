@@ -86,6 +86,7 @@ async def bot_start(event):
     my_last = user.last_name
     my_fullname = f"{my_first} {my_last}" if my_last else my_first
     my_username = f"@{user.username}" if user.username else my_mention
+    custompic = gvarstatus("BOT_START_PIC") or "https://telegra.ph/file/fb4d968101aabff5a8b59.jpg" 
     if chat.id != Config.OWNER_ID:
         customstrmsg = gvarstatus("START_TEXT") or None
         if customstrmsg is not None:
@@ -103,16 +104,16 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"**⌔︙ اهلا وسهلا اخوي  {mention} **\
+            start_msg = f"**⌔︙ اهلا وسهلا ايخويا  {mention} **\
                         \n**⌔︙ {my_mention}'انا البوت المساعد .**\
                         \n**⌔︙ يمكنك التواصل مع صاحب البوت فقط ارسل رسالتك 👤.**\
-                        \n\n**⌔︙ البوت خاص بسورس :** [TELETHON FOR ARABS](https://t.me/X888E)"
+                        \n\n**⌔︙ البوت خاص بسورس :** [ᥱᥣ ᥉𝗁ᥱƚᥲ️ꪀ ᥉᥆υᖇᥴᥱ](t.me/pp_g3)"
         buttons = [
             (
-                Button.url("تنصيب سورسنا", "https://heroku.com/deploy?template=https://github.com/Guevaras1explanations/TelethonArab-"),
+                Button.url("تنصيب سورسنا", "t.me/pp_g3"),
                 Button.url(
-                    "قناه المساعد",
-                    "https://t.me/E999G",
+                    "المطور",
+                    "https://t.me/iiqllll",
                 ),
             )
         ]
