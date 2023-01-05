@@ -86,7 +86,7 @@ async def bot_start(event):
     my_last = user.last_name
     my_fullname = f"{my_first} {my_last}" if my_last else my_first
     my_username = f"@{user.username}" if user.username else my_mention
-    custompic = gvarstatus("BOT_START_PIC") or "https://telegra.ph/file/fb4d968101aabff5a8b59.jpg" 
+    custompic = "https://telegra.ph/file/fb4d968101aabff5a8b59.jpg" 
     if chat.id != Config.OWNER_ID:
         customstrmsg = gvarstatus("START_TEXT") or None
         if customstrmsg is not None:
@@ -104,7 +104,7 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"**⌔︙ اهلا وسهلا ايخويا  {mention} **\
+            start_msg = f"**⌔︙ اهلا وسهلا يا اخويا  {mention} **\
                         \n**⌔︙ {my_mention}'انا البوت المساعد .**\
                         \n**⌔︙ يمكنك التواصل مع صاحب البوت فقط ارسل رسالتك 👤.**\
                         \n\n**⌔︙ البوت خاص بسورس :** [ᥱᥣ ᥉𝗁ᥱƚᥲ️ꪀ ᥉᥆υᖇᥴᥱ](t.me/pp_g3)"
