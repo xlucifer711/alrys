@@ -7,7 +7,7 @@
 from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
-print("- Code Telethon For ch : @IQTHON")
+print("- Code Telethon For ch : @pp_g3")
 APP_ID = int(input("APP ID here: "))
 API_HASH = input("API HASH here: ")
 
