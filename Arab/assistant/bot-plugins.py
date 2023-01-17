@@ -1,5 +1,5 @@
 from . import *
-from sbb_b import bot
+from Arab import bot
 # COPYRIGHT Â© 2022 BY ANES/@N_B_1 ðŸ”¥
 # Edited By reda
 from telethon import events, functions, types, Button
