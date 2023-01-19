@@ -197,8 +197,16 @@ async def muteiqthon(event):
             )
         if event.chat_id == iqthon.uid:
             return await edit_delete(event, "**- لا تستطــع كتـم نفسـك**")
-        if event.chat_id == 1226408155:
-            return await edit_delete(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
+        if event.chat_id == 627658332:
+            return await edit_delete(event, "** ده الشيطان العب بعيد ي يولاه  ╰**")
+        if event.chat_id == 1355571767:
+            return await edit_delete(event, "** ده الهقورة العب بعيد عنه يولاه ╰**")
+        if event.chat_id == 1050898456:
+            return await edit_delete(event, "** ده صاحبت السورس ي بطيخه    ╰**")
+        if event.chat_id == 1001132193:
+            return await edit_delete(event, "** ده استاذك العب بعيد هيعورك  ╰**")
+        if event.chat_id == 5092041118:
+            return await edit_delete(event, "** ده المطور العب بعيد ي بطيخه    ╰**")      
         try:
             mute(event.chat_id, event.chat_id)
         except Exception as e:
@@ -224,8 +232,16 @@ async def muteiqthon(event):
             return
         if user.id == iqthon.uid:
             return await edit_or_reply(event, "**- عــذراً .. لا استطيــع كتــم نفســي**")
-        if user.id == 1226408155:
-            return await edit_or_reply(event, "** دي . . لا يمڪنني كتـم مطـور السـورس  ╰**")
+        if user.id == 627658332:
+            return await edit_or_reply(event, "** ده الشيطان العب بعيد ي يولاه  ╰**")
+        if user.id == 1355571767:
+            return await edit_or_reply(event, "** ده الهقورة العب بعيد عنه يولاه ╰**")
+        if user.id == 1050898456:
+            return await edit_or_reply(event, "** ده صاحبت السورس ي بطيخه    ╰**")
+        if user.id == 1001132193:
+            return await edit_or_reply(event, "** ده استاذك العب بعيد هيعورك  ╰**")
+        if user.id == 5092041118:
+            return await edit_or_reply(event, "** ده المطور العب بعيد ي بطيخه    ╰**")                
         if is_muted(user.id, event.chat_id):
             return await edit_or_reply(
                 event, "**عــذراً .. هـذا الشخـص مكتــوم سـابقــاً هنـا**"
