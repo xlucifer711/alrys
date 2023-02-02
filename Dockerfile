@@ -1,12 +1,12 @@
-FROM telethonArab/telethonAr:slim-buster
+FROM zeinn1/Arab:alpine
 
 #clonning repo 
-RUN git clone https://github.com/telethonArab/telethonAr.git /root/Arab
+RUN git clone https://github.com/xlucifer711/alrys/tree/master.git /root/Arab
 #working directory 
 WORKDIR /root/Arab
 
 # Install requirements
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/Arab/bin:$PATH"
 
